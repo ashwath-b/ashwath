@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  on_tour: false
 
 two:
   name: MyString
+  on_tour: true

@@ -39,6 +39,10 @@ class SongsControllerTest < ActionController::TestCase
     assert_redirected_to song_path(assigns(:song))
   end
 
+  test "should route to delete" do
+    assert_routing({ method: 'DELETE', path: '/songs/1' }, {controller: "songs", action: "destroy", id: 1.to_s})
+  end
+
   test "should destroy song" do
     assert_difference('Song.count', -1) do
       delete :destroy, id: @song

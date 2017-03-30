@@ -4,16 +4,16 @@ one:
   name: MyString
   address: MyString
   city: MyString
-  state: MyString
-  zip: MyString
-  phone: MyString
-  url: MyString
+  state: IN
+  zip: 11111
+  phone: 123-456-7890
+  url: http://domain1.com
 
 two:
-  name: MyString
+  name: MyString2
   address: MyString
   city: MyString
-  state: MyString
-  zip: MyString
-  phone: MyString
-  url: MyString
+  state: IN
+  zip: 22222
+  phone: 908-765-4321
+  url: http://domain2.com
