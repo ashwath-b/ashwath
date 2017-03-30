@@ -12,6 +12,8 @@
 dl.dl-horizontal
   dt Name
   dd= @artist.name
+  dt Image
+  dd= image_tag @artist.image_url, :class => "artist_image"
 
 hr
 

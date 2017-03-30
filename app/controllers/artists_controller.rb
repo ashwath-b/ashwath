@@ -9,6 +9,9 @@ class ArtistsController < ApplicationController
   end
 
   def show
+    if @artist.image_url.nil?
+      @artist.fetch_artist_data
+    end
     respond_with(@artist)
   end
 
