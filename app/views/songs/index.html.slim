@@ -1,9 +1,9 @@
 .page-header
   .pull-right
     = link_to "New", new_song_path, class: 'btn btn-primary'
-    
+
   h1 Songs
-  
+
 table.table.table-striped
   thead
     tr
@@ -16,4 +16,4 @@ table.table.table-striped
         td= link_to song.name, song
         td= song.album.name
         td= song.artist.name
-
+        td= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true, :class => 'delete_song'

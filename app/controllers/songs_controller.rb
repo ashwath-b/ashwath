@@ -33,7 +33,12 @@ class SongsController < ApplicationController
 
   def destroy
     @song.destroy
-    respond_with(@song)
+    # respond_with(@song)
+    respond_to do |format|
+      format.html { redirect_to @song }
+      format.json { head :no_content }
+      format.js   { render :layout => false }
+    end
   end
 
   private
